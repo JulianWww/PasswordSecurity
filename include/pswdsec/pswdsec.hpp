@@ -17,8 +17,8 @@ namespace pswdsec {
         public: bool meetsNIST();
         public: bool meetsPCI_DSS();
 
-        public: charSetUsage charUsage();
-        public: size_t charSetSize();
+        private: charSetUsage charUsage();
+        private: size_t charSetSize();
         public: double getEntropy();
 
         private: size_t meetsCharSets();
