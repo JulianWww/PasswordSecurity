@@ -5,7 +5,7 @@ set(DEFAULT_BUILD_TYPE "Release")
 
 message(STATUS "Downloading password list")
 set(PSWD_LIST ${CMAKE_CURRENT_SOURCE_DIR}/lists/pswds.txt)
-#file(DOWNLOAD "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/xato-net-10-million-passwords.txt" ${PSWD_LIST})
+file(DOWNLOAD "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/xato-net-10-million-passwords.txt" ${PSWD_LIST})
 
 if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
   message(STATUS "Setting build type to '${DEFAULT_BUILD_TYPE}' as none was specified.")
