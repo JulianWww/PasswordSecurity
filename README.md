@@ -25,3 +25,9 @@ $ git clone https://github.com/JulianWww/PasswordSecurity
 $ mkdir PasswordSecurity/build && cd PasswordSecurity/build
 $ cmake .. && make && sudo make install
 ```
+## update
+navigate to the libraries build directory
+```
+$ git pull https://github.com/JulianWww/PasswordSecurity
+$ cmake .. && make && sudo make install
+```
