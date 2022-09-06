@@ -25,6 +25,7 @@ $ git clone https://github.com/JulianWww/PasswordSecurity
 $ mkdir PasswordSecurity/build && cd PasswordSecurity/build
 $ cmake .. && make && sudo make install
 ```
+The `cmake` will spend a lot of time downloading a file, this is normal.
 ## update
 navigate to the libraries build directory
 ```
