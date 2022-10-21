@@ -14,7 +14,7 @@ void pswdsec::Wordlist::load(std::istream& stream) {
     }
     this->pswds.shrink_to_fit();
 }
-bool pswdsec::Wordlist::contains(const std::string& pswd) {
+bool pswdsec::Wordlist::contains(const std::string& pswd) const {
     for (auto const& element : this->pswds) {
         if (element == pswd) {
             return true;

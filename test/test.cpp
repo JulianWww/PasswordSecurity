@@ -11,6 +11,6 @@ int main(int argc, char **argv) {
   //  }
   //}
   pswdsec::password word("!599@govnoedi13");
-  std::cout << word.meetsOWASP() << std::endl;
+  //std::cout << word.meetsOWASP() << std::endl;
   return 1;
 }

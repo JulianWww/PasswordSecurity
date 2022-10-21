@@ -1,3 +1,5 @@
+#pragma once
+
 #include <string>
 #include <tuple>
 #include <jce/math.hpp>
@@ -11,18 +13,19 @@ namespace pswdsec {
         // initialize the password like a string
         public: template<typename ...T>
         password(T... data);
+        ~password();
 
-        public: bool meetsOWASP();
-        public: bool meetsOWASP_ASVS();
-        public: bool meetsNIST();
-        public: bool meetsPCI_DSS();
+        public: bool meetsOWASP() const;
+        public: bool meetsOWASP_ASVS() const;
+        public: bool meetsNIST() const;
+        public: bool meetsPCI_DSS() const;
 
-        private: charSetUsage charUsage();
-        private: size_t charSetSize();
-        public: double getEntropy();
+        private: charSetUsage charUsage() const;
+        private: size_t charSetSize() const;
+        public: double getEntropy() const;
 
-        private: size_t meetsCharSets();
-        private: size_t getMaxIdenticalCharsInRow();
+        private: size_t meetsCharSets() const;
+        private: size_t getMaxIdenticalCharsInRow() const;
     };
 }
 

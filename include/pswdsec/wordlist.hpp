@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <vector>
 
@@ -7,6 +8,6 @@ namespace pswdsec {
         
         public: Wordlist();
         public: void load(std::istream& in);
-        public: bool contains(const std::string& pswd);
+        public: bool contains(const std::string& pswd) const;
     };
 }
